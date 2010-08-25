@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+<style type="text/css">
+input {
+	width: auto;
+}
+</style>
+</head>
+<body>
+<div id="sbdiv">
+<input id="startbox" type="text"/>
+</div>
+<div id="oldwords">
+
+</div>
+<div id="letters" style="display: none;">
+
+</div>
+
+<script type="text/javascript">
+var word;
+$("#startbox").keypress(function(event) {
+	if (event.keyCode =='13') {
+		word = $(this).val();
+		$.each(word, function(index, value) {
+			$("#letters").append("<input size='1' type='text' value='" + value + "'/> ");
+		});
+		$("#letters").keypress(function(event){
+			if (event.keyCode == '13') {
+				var newword = ""
+				$("#letters input").each(function(index, value) {
+					newword += $(value).val();
+				});
+				$("#oldwords").append("<p>" + newword + "</p>");
+			}
+		});
+		$("#sbdiv").hide();
+		$("#letters").show();
+	}
+});
+</script>
+</body>
+</html>

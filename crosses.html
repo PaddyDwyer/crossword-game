@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.grid {
+	border: solid black;
+	border-width: 1px 0 0 1px;
+}
+.grid div {
+	width: 35px;
+	height: 35px;
+	border: solid black;
+	border-width: 0 1px 1px 0;
+	text-align: center;
+}
+
+.grid div.selected, .grid div.selected input {
+	background-color: #C1E1ED;
+}
+
+.grid div.hor, .grid .left {
+	background-color: #E8A9EB
+}
+
+.grid div.ver, .grid .right {
+	background-color: #EBD1A9
+}
+
+.grid .left, .grid .right {
+	width: 17px;
+	border-width: 0px;
+	float: left;
+}
+
+.grid .left {
+	border-right-width: 1px;
+}
+
+.grid div input {
+	margin-top: 8px;
+	text-align: center;
+	border: none;
+}
+
+.grid .black {
+	background-color: black;
+}
+</style>
+</head>
+<body>
+<table class="grid" cellpadding="0" cellspacing="0">
+	<tr>
+		<td><div class="h1"></div></td>
+		<td><div class="h1 v1"></div></td>
+		<td><div class="h1"></div></td>
+		<td><div class="h1 v2"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="h2 v3"></div></td>
+		<td><div class="h2"></div></td>
+		<td><div class="h2"></div></td>
+		<td><div class="h2 v4"></div></td>
+		<td><div class="h2"></div></td>
+		<td><div class="h2 v5"></div></td>
+		<td><div class="h2"></div></td>
+		<td><div class="h2 v6"></div></td>
+		<td><div class="h2"></div></td>
+		<td><div class="h2 v7"></div></td>
+	</tr>
+	<tr>
+		<td><div class="black"></div></td>
+		<td><div class="v1 v1"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v2"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v3"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v4"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v5"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v6"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v7"></div></td>
+	</tr>
+	<tr>
+		<td><div class="h3"></div></td>
+		<td><div class="h3 v1"></div></td>
+		<td><div class="h3"></div></td>
+		<td><div class="h3 v2"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="h4 v3"></div></td>
+		<td><div class="h4"></div></td>
+		<td><div class="h4"></div></td>
+		<td><div class="h4 v4"></div></td>
+		<td><div class="h4"></div></td>
+		<td><div class="h4 v5"></div></td>
+		<td><div class="h4"></div></td>
+		<td><div class="h4 v6"></div></td>
+		<td><div class="h4"></div></td>
+		<td><div class="h4 v7"></div></td>
+	</tr>
+	<tr>
+		<td><div class="black"></div></td>
+		<td><div class="v1"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v2"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v3"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v4"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v5"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v6"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v7"></div></td>
+	</tr>
+	<tr>
+		<td><div class="h5"></div></td>
+		<td><div class="h5 v1"></div></td>
+		<td><div class="h5"></div></td>
+		<td><div class="h5 v2"></div></td>
+		<td><div class="h5"></div></td>
+		<td><div class="h5 v3"></div></td>
+		<td><div class="h5"></div></td>
+		<td><div class="h5 v8"></div></td>
+		<td><div class="h5 v4"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="h6 v5"></div></td>
+		<td><div class="h6"></div></td>
+		<td><div class="h6 v6"></div></td>
+		<td><div class="h6"></div></td>
+		<td><div class="h6 v7"></div></td>
+	</tr>
+	<tr>
+		<td><div class="black"></div></td>
+		<td><div class="v1"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v2"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v3"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v8"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v9"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v10"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v7"></div></td>
+	</tr>
+	<tr>
+		<td><div class="h7"></div></td>
+		<td><div class="h7 v1"></div></td>
+		<td><div class="h7"></div></td>
+		<td><div class="h7 v2"></div></td>
+		<td><div class="h7"></div></td>
+		<td><div class="h7 v3"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="h8 v8"></div></td>
+		<td><div class="h8"></div></td>
+		<td><div class="h8 v9"></div></td>
+		<td><div class="h8"></div></td>
+		<td><div class="h8 v10"></div></td>
+		<td><div class="h8"></div></td>
+		<td><div class="h8"></div></td>
+		<td><div class="h8 v7"></div></td>
+	</tr>
+	<tr>
+		<td><div class="black"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v2"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v3"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v8"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v9"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v10"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="black"></div></td>
+	</tr>
+	<tr>
+		<td><div class="h9 v11"></div></td>
+		<td><div class="h9"></div></td>
+		<td><div class="h9"></div></td>
+		<td><div class="h9 v2"></div></td>
+		<td><div class="h9"></div></td>
+		<td><div class="h9 v3"></div></td>
+		<td><div class="h9"></div></td>
+		<td><div class="h9 v8"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="h10 v9"></div></td>
+		<td><div class="h10"></div></td>
+		<td><div class="h10 v10"></div></td>
+		<td><div class="h10"></div></td>
+		<td><div class="h10 v12"></div></td>
+		<td><div class="h10"></div></td>
+	</tr>
+	<tr>
+		<td><div class="v11"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v2"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v3"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v8"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v9"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v10"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v12"></div></td>
+		<td><div class="black"></div></td>
+	</tr>
+	<tr>
+		<td><div class="h11 v11"></div></td>
+		<td><div class="h11"></div></td>
+		<td><div class="h11 v13"></div></td>
+		<td><div class="h11 v2"></div></td>
+		<td><div class="h11 v14"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="h12 v15"></div></td>
+		<td><div class="h12 v8"></div></td>
+		<td><div class="h12"></div></td>
+		<td><div class="h12 v9"></div></td>
+		<td><div class="h12"></div></td>
+		<td><div class="h12 v10"></div></td>
+		<td><div class="h12"></div></td>
+		<td><div class="h12 v12"></div></td>
+		<td><div class="h12"></div></td>
+	</tr>
+	<tr>
+		<td><div class="v11"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v13"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v14"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v15"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v9"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v10"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v12"></div></td>
+		<td><div class="black"></div></td>
+	</tr>
+	<tr>
+		<td><div class="h13 v11"></div></td>
+		<td><div class="h13"></div></td>
+		<td><div class="h13 v13"></div></td>
+		<td><div class="h13"></div></td>
+		<td><div class="h13 v14"></div></td>
+		<td><div class="h13"></div></td>
+		<td><div class="h13 v15"></div></td>
+		<td><div class="h13"></div></td>
+		<td><div class="h13"></div></td>
+		<td><div class="h13 v9"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="h14 v10"></div></td>
+		<td><div class="h14"></div></td>
+		<td><div class="h14 v12"></div></td>
+		<td><div class="h14"></div></td>
+	</tr>
+	<tr>
+		<td><div class="v11"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v13"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v14"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v15"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v9"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v10"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="v12"></div></td>
+		<td><div class="black"></div></td>
+	</tr>
+	<tr>
+		<td><div class="h15 v11"></div></td>
+		<td><div class="h15"></div></td>
+		<td><div class="h15 v13"><div></td>
+		<td><div class="h15"></div></td>
+		<td><div class="h15 v14"></div></td>
+		<td><div class="h15"></div></td>
+		<td><div class="h15 v15"></div></td>
+		<td><div class="h15"></div></td>
+		<td><div class="h15"></div></td>
+		<td><div class="h15 v9"></div></td>
+		<td><div class="black"></div></td>
+		<td><div class="h16 v10"></div></td>
+		<td><div class="h16"></div></td>
+		<td><div class="h16 v12"></div></td>
+		<td><div class="h16"></div></td>
+	</tr>
+</table>
+<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="js/grid.js"></script>
+</body>
+</html>
