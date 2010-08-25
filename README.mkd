@@ -1,0 +1,5 @@
+crossword-game
+=======================================
+## DESCRIPTION
+
+This is the beginings of a game in which two players attempt to put words into a crossword puzzle. The last person to enter a word wins.
